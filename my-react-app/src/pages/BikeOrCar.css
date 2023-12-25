@@ -1,0 +1,74 @@
+/* Center the box and its contents */
+.box {
+    
+    height: 490px;
+    border: 2px solid transparent;
+    border-color: rgb(246, 228, 246);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    background-color: white;
+}
+
+/* Container for the top text */
+.top-text {
+    position: absolute;
+    top: 20px; /* Adjust the distance from the top as needed */
+}
+
+.proffession{
+    margin-top: 105px;
+}
+
+/* Style for the title text */
+.Title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* Reset margin */
+    white-space: nowrap;
+}
+/* Center the box and its contents */
+
+/* Style for the title text */
+/* Style for the title text */
+/* Style for the title text */
+.Title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0; /* Reset margin */
+    align-self: flex-start; /* Move the title to the top of the box */
+}
+
+/* Style for the line */
+.line {
+    width: 100%; /* Set the width to 100% for a horizontal line */
+    height: 2px; /* Set the height to adjust the line thickness */
+    background: #000; /* Set the background color for the line */
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+/* 
+.D{
+    font-size: 24px;
+
+}
+.B{
+    font-size:24px ; */
+/* } */
+span{
+    color:  #12f7ff;
+
+}
+.box h2{
+    color: #000;
+}
+.box h3{
+    color: #000;
+    border: #12f7ff;
+}

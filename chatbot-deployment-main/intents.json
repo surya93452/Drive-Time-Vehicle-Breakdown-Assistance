@@ -1,0 +1,141 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "showroom_chennai_600061",
+      "patterns": ["Chennai","chennai service center","service center in chennai","naganallur","600061", "College Road Nanganallur","pincode 600061","bike mechanic nanganallur","yamaha service center nanganallur"],
+      "responses": ["Here are some service center details<br>- Name: Bikerz<br>- Address: No. 134, College Road, Nanganallur, Chennai 600061, Tamil Nadu<br>- Contact Number: 9551675776"]
+    },
+    {
+      "tag": "showroom_chennai_600044",
+      "patterns": ["Chennai-600044","600044","gst road","gst road chrompet","chrompet, chennai","bike mecahnic chrompet"],
+      "responses": ["Here are some service center details<br>- Name: Bikerz<br>- Address: No -251, Gst Road, Chrompet, Chennai - 600044, Tamil Nadu<br>- Contact Number: 9551683509"]
+    },
+    {
+      "tag": "showroom_chennai_603103",
+      "patterns": ["Chennai-603103","kelambakkam","kelambakam","OMR Salai", "Eleventhangal","603103","bike mechanic elevanthangal"],
+      "responses": ["Here are some service center details<br>- Name: Kiran Motors<br>- Address: OMR Salai, Eleventhangal, Kelambakkam, Chennai-603103<br>- Contact Number: 9283451042"]
+    },
+    {
+      "tag": "showroom_chennai_600100",
+      "patterns": ["Chennai-600100","pincode-600100","600100","Velachery main road","Velachery main road,VGP Pushpa Nagar","Medavakkam","VGP Pushpa Nagar,Medavakkam","bike mechanic medavakkam"],
+      "responses": ["Here are some service center details<br>- Name: Samukh Motors<br>- Address: Plot No: 9, Door No: 7/5, Velachery main road, VGP Pushpa Nagar, Medavakkam, Chennai 600100<br>- Contact Number: 9841013323<br>- Name: Shanti Motors<br>- Address: Plot No-30, Mylai Balaji Nagar, Velachery Main Road, Pallikaranai, Chennai, Tamilnadu - 600100<br>- Contact Number: 9566103111"]
+    },
+    {
+      "tag": "showroom_chennai_600056",
+      "patterns": ["Chennai-600056","pincode-600056","600056","Mount Poonamalle Highway","Kattupakkam","Mount Poonamalle Highway Kattupakkam","bike mechanic mount ponamalle highway"],
+      "responses": ["Here are some service center details<br>- Name: Sri Motors<br>- Address: No 21, Mount Poonamalle Highway, Kattupakkam, Chennai-600056, Tamil Nadu<br>- Contact Number: 8754496358"]
+    },
+    {
+      "tag": "showroom_kanchipuram_603502",
+      "patterns": ["Kanchipuram-631502","pincode-631502","631502","bike service centers near periya kanchipuram", "Annai Indra Nagar,Ponneri karai,kanchipuram","631502","bike mechanic in big kanchipuram","mechanics for bike big kanchipuram","mechanics for bike shiva kanchi","enathur","enadur","bike mechanic in enathur","Senghazuneerodai Street","Senghazuneerodai Street,kanchipuram","nellukara street","Thaiyar Kullam","karukkinil Amarnthaval koil street kanchipuram","Angala Parameshwari Nagar","vellaigate","vellagate","Kanchipuram Railway Station Rd","periya kanchipuram"],
+      "responses": ["Here are some service center details<br>- Name: Anand Motors Anand Yamaha<br>- Address: Plot No. 165, Annai Indra Nagar, Ponneri Kkarai, Kanchipuram - 631502, Tamil Nadu<br>- Contact Number: 9566309333<br><br>- Name: Anand Automobiles<br>- Address: 123, Senghazuneerodai Street, Kanchipuram - 631 502<br>- Contact Number: 9840065366<br><br>- Name: Sarrada Motors<br>- Address: No. 3B, Nellukara Street, Kancheepuram - 631502<br><br>- Name: Bike Mechanic Service Centre<br>- Address:  Thirupathi Hwy, Chitterimedu, kanchipuram Tamil Nadu 631502<br><br>- Name: Rajalakshmi Two Wheeler service center<br>- Address: 17A. karukkinil Amarnthaval koil street, vandavasi Road, Thaiyar Kullam, Kanchipuram, Tamil Nadu 631502<br><br><br>-Name: Jet Blaze Motors<br>- Address: Plot No : 131 & 132, N.H - 4, Vellai Gate, Angala Parameshwari Nagar, Kancheepuram - 631502<br>- Contact Number:9629032223,9894538176<br><br>- Name: Ranjith bike mechanic<br>- Address: Kanchipuram Railway Station Rd, Iyankaran Nagar, Kanchipuram, Tamil Nadu 631502<br>- Contact Number: 6381515413."]
+    },
+    {
+      "tag": "showroom_kanchipuram_631501",
+      "patterns": ["Kanchipuram-63501","pincode-631501","603501","SBI Colony Kancheepuram","collectrate","collectrate kanchipuram","Murugesa Mudaliar Nagar SBI Colony Kancheepuram","Chinna Kanchipuram", "Arappanacheri","little kanchipuram","keerai Mandapam","gandhi road kanchipuram","gandhiroad","madam street pillayarpallayam","pillayarpalam","chinna kanchipuram","netaji nagar","tollgate","rangaswamykulam","orrikai","bike service center near chinna kanchipuram"],
+      "responses": ["Here are some service center details<br>- Name: KNK Autozone<br>- Address: Ennaikaran NO.52 K S, Murugesa Mudaliar Nagar, SBI Colony, Kancheepuram - 631501<br>- Contact Number: 18002102190<br><br>- Name: Bike Mechanic Shop<br>- Address: Chinna Kanchipuram, Arappanacheri, Tamil Nadu 631501<br><br>- Name: Sri Murugan Bike Serice Centre<br>- Address: keerai Mandapam, Narayanapalayam St, Ennaikaran, Kanchipuram, Tamil Nadu<br>- Contact Number: 6315010902<br><br>- Name: Pandian Two wheeler Electrician<br>-Address:  Gandhi Rd, Kanchipuram, Tamil Nadu 631501<br><br>- Name: S - BIKES<br>- Address:  95, Madam St, Pillaiyarpalayam, Kanchipuram, Tamil Nadu 631501<br>-Contact Number: 07010029439"]
+    },
+    {
+      "tag": "showroom_chengalpattu_603109",
+      "patterns": ["Chengalpattu-603109","603109","pincode-603109","Thirukalukundram","Thirukalukundram Chengalpattu"],
+      "responses": ["Here are some service center details<br>- Name: Dak Shen Motors<br>- Address: 241/1, Sadras Road, State highway 58, Thirukalukundram, Chengalpattu 603109<br>- Contact Number: 8939929638"]
+    },
+    {
+      "tag": "showroom_chengalpattu_603001",
+      "patterns": ["Chengalpattu-603001","GST Road Pulipakkam Village","Pulipakkam Village","pincode-603001","603001","Devarajanar Street Vedhachalam Nagar Chengalpet"],
+      "responses": ["Here are some service center details<br>- Name: S S Motors<br>- Address: No. 86/2A GST Road, Pulipakkam Village, Chengalpattu Taluk, Kanchipuram-603001<br>- Contact Number: 7299988889<br><br>- Name: Vetrivel Motors<br>- Address: D.No 3/12 Devarajanar Street Vedhachalam Nagar Chengalpet, Tamil Nadu - 603001<br>- Contact Number: 9443639140"]
+    },
+    {
+      "tag": "service_center_600122",
+      "patterns": ["chennai-600122","600122","pincode-600122","Kundrathur Main Road moondram katalai chennai","moondram katalai chennai","kundrathur main road chennai"],
+      "responses": ["Here are some service center details<br>- Name: Winner Motors<br>- Address: 67/1 Kundrathur Main Road, Moondram kattalai, Chennai-600122, Tamil Nadu<br>Contact Number: 9710191886"]
+    },
+    {
+      "tag":"car_service_center_631502",
+      "patterns": ["big kanchipuram car mechanics","periya kanchipuram mechanics","631502 car mechanics","shiva kanchi","Uthiramerur Main Road, Arasu Nagar,Orikkai, Kanchipuram","car mechanics Vedachalam Nagar Extension, Gem Nagar, Kanchipuram car mechanic","Kailasanathar Temple Rd, Pillaiyarpalayam car mechanic, Kanchipuram, Karuppadithattadai","Nellukara Street car mechanic"],
+      "responses": ["Here are some Car service center details<br>- Name: M M CAR CARE<br>- Address: NO.110,Uthiramerur Main Road, Arasu Nagar,Orikkai, Kanchipuram, Tamil Nadu 631502<br><br>- Name: Dhanush&Vinish auto electrical works<br>- Address: Vedachalam Nagar Extension, Gem Nagar, Kanchipuram, Tamil Nadu 631502<br><br>- Name: Maruti Suzuki Service (Ganesh Cars)<br>-Address No. 3B, Nellukara Street, Kancheepuram-631502<br><br>-Name:Prabhu Automobiles<br>-Address:Vandavasi Rd, near Collector Office, Kanchipuram, Tamil Nadu 631502<br>-Contact Number:9786448879<br><br>-Name:Babu car mechanic<br>-Address: 26, Kailasanathar Temple Rd, Pillaiyarpalayam, Kanchipuram, Karuppadithattadai, Tamil Nadu 631502<br>"]
+    },
+    {
+      "tag":"car_service_center_631501",
+      "patterns": ["631501","chinna kanchipuram car mechanics","little kanchipuram car mechanics", "Muntram Kal Mantabam, near New Police Station","B2 police station","Nimanthakara Othavadai St, Pillaiyarpalayam","Kamarajar St, Pallavan Nagar, Gem Nagar","Voc Street Pallavarmedu Pillayarpalayam, Kanchipuram, Voc Street, Pallavarmedu,631501","pincode 631501","631 501 car mechanics"],
+      "responses":["Here are some service center details<br>- Name: SPD AUTO SERVICE CENTER<br>-Address:  No:7 Muntram Kal Mantabam, near New Police Station, Little Kanchipuram, Kanchipuram, Tamil Nadu 631501<br>-Contact Number:09944627784<br><br>-Name: KRISHNA AUTO WORKS<br>-Address: 4, Nimanthakara Othavadai St, Pillaiyarpalayam, Kanchipuram, Tamil Nadu 631501<br>-Contact Details: 6382742420<br><br>-Name: AADEE GARAGE <br>-Address: : S2, Kamarajar St, Pallavan Nagar, Gem Nagar, Kanchipuram, Tamil Nadu 631501<br>-Contact Number: 9894545095<br><br>-Name:Radha Auto Center <br>-Address: Voc Street Pallavarmedu Pillayarpalayam, Kanchipuram, Voc Street, Pallavarmedu, Tamil Nadu 631501<br>-Contact Details:8124435702"]
+    },
+
+    {
+      "tag": "showroom_vijayawada",
+      "patterns": ["520012","vijayawada-520012","mechanic shop in vijayawada","vijayawada","vijayawada andhrapradesh"],
+      "responses": ["Here are some service center details<br>- Name: Jhonson Drives<br>- Address: Near polytechnic govt collage Beside Andhra Hospital Ring Road LEPL BENZ Circle<br>- Contact Number: 8939929638<br>"]
+    },
+    
+    {
+      "tag": "Mechanic_registration",
+      "patterns": ["Mechanic Registration","I am a new mechanic","new mechanic","mechanic registration page","registration"],
+      "responses": ["Please follow these steps <br> Step 1: Tap on are you a Mechanic link on top right corner<br>Step 2:Press on sign up <br> Step 3:If you are a bike mechanic press the bike mechanic button else press the car mechanic <br> Step 4: Enter your shop details and your shop details <br> Step 5: Submit your credentials. <br><a href=http://localhost:3000/bikeorcar>Click here to Register quickly</a>"]
+    },
+
+    {
+      "tag": "Mechanic_signin",
+      "patterns": ["Mechanic Signin","I am a registered mechanic","registered mechanic","mechanic signin page"],
+      "responses": ["Please follow these steps <br> Step 1: Tap on are you a Mechanic link on top right corner<br>Step 2:Press on signin <br> Step 3:Enter your signin credentials <br> Step 4: You can able to see your details <br> Step 5:If you want to modify your details press on edit button <br> Step 6: If you modified the details press the update button to save your changes.<br><a href=http://localhost:3000/mechanic-login>Click here to Login</a>"]
+    },
+       
+        
+    
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}

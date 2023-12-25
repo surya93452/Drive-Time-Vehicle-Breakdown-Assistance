@@ -1,0 +1,9 @@
+.video-container-style {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.video-style {
+    height: 37%;
+    width: 90%;
+}
