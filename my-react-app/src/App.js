@@ -12,6 +12,7 @@ import CarRegisterPage from "./pages/CarMechanicRegisterPage";
 import BikeRegisterPage from "./pages/BikeMechanicRegister";
 import Tutorials from "./pages/Tutorials";
 import './App.css';
+import NearbyPetrolBunks from "./pages/petrol"
 
 
 function App() {
@@ -33,7 +34,8 @@ function App() {
           <Route path="/reset" element={<ForgotPasswordPage />} />
           <Route path="/bikeorcar" element={<BikeOrCar />}/>
           <Route path="/Mechanic-page" element={<MechanicLogin />}/>
-
+          <Route path="/PetrolBunk" element={<NearbyPetrolBunks />}/>
+          
 
         </Routes>
         </main>

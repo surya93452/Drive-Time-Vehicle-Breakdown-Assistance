@@ -1,0 +1,15 @@
+.Rating {
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    color: black;
+}
+
+.star {
+  font-size: 2rem;
+  margin: 5px;
+ 
+}
+.modal-header {
+  color: black;
+}

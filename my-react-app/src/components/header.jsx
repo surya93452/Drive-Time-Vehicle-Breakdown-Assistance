@@ -15,6 +15,9 @@ function Header() {
       };
       const navigateToTutorials = () =>{
         navigate('/Tutorials');
+      };
+      const navigateToPetrolbunk = () =>{
+        navigate('/PetrolBunk');
       }; 
     return (
         <header>
@@ -26,6 +29,7 @@ function Header() {
             <li><a onClick={navigateToCarMechanic} href='#'><i className="fa fa-car" />Car Service Centers</a></li>
             <li><a onClick={navigateToBikeMechanic} href='#'><i className="fa fa-motorcycle" />Bike Service Centers</a></li>
             <li><a onClick={navigateToTutorials} href='#'><i className="fa fa-wrench" />Tutorials</a></li>
+            <li><a onClick={navigateToPetrolbunk} href='#'><i className="fa fa-tint" />Gas Stations</a></li>
         </ul>
 
     </header>

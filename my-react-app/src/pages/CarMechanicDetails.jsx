@@ -4,6 +4,9 @@ import {useNavigate } from "react-router-dom";
 import './CarMechanicDetails.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap/dist/js/bootstrap.min.js'
+import Rating from "../components/Rating";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 export default function CarMechanicDetails(){
  
@@ -14,7 +17,25 @@ export default function CarMechanicDetails(){
     const [cityDropdownList,setCityid] = useState([]);
     const [cityDropdownName,setCityName] = useState({label: "Please select", value: ""});
     const [searchResults,setSearchResults] = useState([]);
-    
+
+    const [show, setShow] = useState(false);
+
+    const [rating, setRating] = useState(null);
+    const [hover, setHover] = useState(null);
+    const [totalStars, setTotalStars] = useState(5);
+const [userRating, setUserRating] = useState(null);
+  const [selectedUserEmail, setSelectedUserEmail] = useState(null);
+  const handleClose = () => setShow(false);
+  const handleShow = (e) => {
+    setShow(true);
+    setSelectedUserEmail(e.target.id);
+  }
+
+
+  const handleChange = (e) => {
+    setTotalStars(parseInt(Boolean(e.target.value, 10) ? e.target.value : 5));
+  };
+
     // const []
     const navigate = useNavigate();
 
@@ -41,6 +62,27 @@ export default function CarMechanicDetails(){
     e.preventDefault();
     setCityName({label: e.target.name, value: e.target.id})
     }
+    
+
+    const submitUserRating = (e) => {
+      e.preventDefault();
+    axios.post('http://127.0.0.1:5000/submit_review', {
+            email: selectedUserEmail,
+            rating:rating
+
+    }).then(function (response) {
+      console.log(response);
+      setRating(null)
+      setShow(false);
+      setUserRating(response.data.averageRating)
+ })
+ .catch(function (error) {
+     console.log(error, 'error');
+     if (error.response.status === 409) {
+         alert("Email Already exists");
+     }
+ });
+  }
   
     const  onDropdownChange = (e) => {
       e.preventDefault();
@@ -146,6 +188,63 @@ export default function CarMechanicDetails(){
                 <div className="div-width">
                   <div className="text-style"><i className="fa fa-user" /><b>Name: </b>{result.mechanic_name}</div>
                   <div className="text-style"><i className="fa fa-phone" /><b>Contact No: </b>{result.contact_number}</div>
+                  
+
+
+                  <Button variant="primary" onClick={handleShow} id={result.email}>
+        Rate Us
+      </Button>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Rate Us</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <div className="Rating">
+      <h1>Star rating</h1>
+      {[...Array(totalStars)].map((star, index) => {
+        const currentRating = index + 1;
+
+        return (
+          <label key={index}>
+            <input
+              key={star}
+              type="radio"
+              name="rating"
+              value={currentRating}
+              onChange={() => setRating(currentRating)}
+            />
+            <span
+              className="star"
+              style={{
+                color:
+                  currentRating <= (hover || rating) ? "#ffc107" : "#e4e5e9",
+              }}
+              onMouseEnter={() => setHover(currentRating)}
+              onMouseLeave={() => setHover(null)}
+            >
+              &#9733;
+            </span>
+          </label>
+        );
+      })}
+      
+    </div>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" type="button" onClick={submitUserRating}>Submit</Button>
+        </Modal.Footer>
+      </Modal>
+
+
                 </div>
                 <div className="div-width">
                   <div className="text-style"><i class="fa fa-home" /><b>Shop Name: </b>{result.shop_name}</div>
@@ -155,8 +254,9 @@ export default function CarMechanicDetails(){
                   </div>
                   <div className="text-style"><i className="fa fa-map-marker" /><b>Map: </b><a href={result.geolocation} target="_blank">{result.geolocation}</a></div>
                   <div className="text-style grid-style">
-                    <div><i className="fa fa-info-circle" /><b>About Us: </b></div>
-                    <div>{result.shop_description}</div>
+                    <div><i className="fa fa-info-circle" /><b>Rating: </b></div>
+                    <div><Rating rating={userRating || result.rating}/></div>
+                    
                   </div>
                 </div>
             </div>

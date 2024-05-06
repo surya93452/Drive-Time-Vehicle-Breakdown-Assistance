@@ -1,0 +1,27 @@
+/* Marker style */
+.custom-marker {
+    position: relative;
+    background-color: #ff5733; /* Marker background color */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Circle shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff; /* White border */
+    cursor: pointer;
+}
+
+/* Popup content style */
+.popup-content {
+    font-size: 14px;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Popup arrow style */
+.leaflet-popup-tip-container {
+    display: none; /* Hide the default Leaflet popup arrow */
+}

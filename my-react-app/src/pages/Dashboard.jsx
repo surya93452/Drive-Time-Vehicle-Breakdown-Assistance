@@ -87,7 +87,7 @@ function Dashboard() {
                 </div>
                 <div class="chatbox__content--header">
                     <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sri Ram. How can I help you?</p>
+                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
                 </div>
             </div>
             <div class="chatbox__messages">

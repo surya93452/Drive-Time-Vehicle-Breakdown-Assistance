@@ -48,6 +48,8 @@ export default function BikeRegisterPage(){
      
     const registerUser = (e) => {
       e.preventDefault();
+
+      
       if (districtDropdownName.label === "Please select") {
         alert("Please select district");
         return;

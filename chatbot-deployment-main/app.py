@@ -36,6 +36,8 @@ class User(db.Model):
     city = db.Column(db.String(50), nullable=False)
     district_id = db.Column(db.String(50), nullable=False)
     city_id = db.Column(db.String(50), nullable=False)
+    rating=db.Column(db.Integer, nullable=False)
+    submitCount=db.Column(db.Integer)
 
 with app.app_context():
     db.create_all()
@@ -261,17 +263,49 @@ def get_users_by_city():
     # Prepare response
     users_info = [{
         
+        "email": user.email,
         "shop_name": user.shop_name,
         "mechanic_name": user.mechanic_name,
         "contact_number": user.contact_number,
         "address": user.address,
         "geolocation": user.geolocation,
-        "shop_description": user.shop_description
-        
+        "shop_description": user.shop_description,
+        "rating": user.rating / user.submitCount if(user.rating > 0 and user.submitCount > 0) else 0
     } 
     for user in users]
 
     return jsonify({"users": users_info})
+
+@app.route('/submit_review', methods=['POST'])
+def submit_review():
+    rating = request.json.get('rating')
+    email = request.json.get("email")
+
+    if not rating or not (1 <= rating <= 5):
+        return jsonify({'error': 'Invalid rating. Please choose a rating between 1 and 5.'}), 400
+
+    user = User.query.filter_by(email=email).first()
+
+    user.rating += rating
+    user.submitCount += 1
+
+    db.session.commit()
+
+    if user.submitCount > 0:
+        average_rating = user.rating / user.submitCount
+    else:
+        average_rating = 0
+
+
+    return jsonify({
+        "rating": user.rating,
+        'averageRating': average_rating
+
+    })
+
+    # return jsonify({
+    #     "rating": user.rating
+    # })
 
  
 if __name__=="__main__":
